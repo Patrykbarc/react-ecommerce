@@ -1,18 +1,18 @@
 export const productCategoryMenuLinks = [
   {
     name: "odzież",
-    to: "/category/",
+    to: "clothes",
   },
   {
     name: "obuwie",
-    to: "/category/",
+    to: "footwear",
   },
   {
     name: "akcesoria",
-    to: "/category/",
+    to: "accessories",
   },
   {
     name: "sport",
-    to: "/category/",
+    to: "sport",
   },
 ];

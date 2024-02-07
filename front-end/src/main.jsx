@@ -1,20 +1,25 @@
-import './styles/theme.css'
-import './styles/globals.css'
+import "./styles/theme.css";
+import "./styles/globals.css";
 
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <App />,
-	},
-])
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "category/:params",
+      },
+    ],
+  },
+]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-	<React.StrictMode>
-		<RouterProvider router={router}></RouterProvider>
-	</React.StrictMode>
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router}></RouterProvider>
+  </React.StrictMode>,
+);

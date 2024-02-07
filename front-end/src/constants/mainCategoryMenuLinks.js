@@ -1,14 +1,14 @@
 export const mainCategoryMenuLinks = [
-   {
-     name: "kobieta",
-     to: "",
-   },
-   {
-     name: "mężczyzna",
-     to: "",
-   },
-   {
-     name: "dziecko",
-     to: "",
-   },
- ];
+  {
+    name: "kobieta",
+    category: "women",
+  },
+  {
+    name: "mężczyzna",
+    category: "men",
+  },
+  {
+    name: "dziecko",
+    category: "children",
+  },
+];
